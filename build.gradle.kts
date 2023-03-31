@@ -1,7 +1,6 @@
 plugins {
     `java-library`
     id("com.github.johnrengelman.shadow") version "8.0.0"
-    id("io.papermc.paperweight.userdev") version "1.5.3"
     id("xyz.jpenilla.run-paper") version "2.0.1"
 }
 
@@ -16,13 +15,12 @@ java {
 repositories {
     mavenLocal()
     mavenCentral()
-    maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots")
     maven("https://oss.sonatype.org/content/groups/public/")
     maven("https://papermc.io/repo/repository/maven-public/")
 }
 
 dependencies {
-    paperweight.paperDevBundle("1.19.4-R0.1-SNAPSHOT")
+    compileOnly("dev.folia:folia-api:1.19.4-R0.1-SNAPSHOT")
 }
 
 tasks.compileJava {

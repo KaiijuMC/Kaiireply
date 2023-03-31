@@ -2,6 +2,7 @@ name: Kaiireply
 version: ${version}
 main: dev.kugge.kaiireply.Kaiireply
 api-version: 1.19
+folia-supported: true
 authors: [kugge]
 description: Simple reply plugin
 commands:
