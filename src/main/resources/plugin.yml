@@ -10,3 +10,7 @@ commands:
     description: Kaiireply command
     usage: /<command>
     permission: kaiireply.reply
+permissions:
+  kaiireply.reply:
+    description: Allows r command
+    default: true
